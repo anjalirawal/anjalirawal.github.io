@@ -13,7 +13,7 @@
       color: #333;
       padding: 0 20px;
     }
-    h1, h2 {
+    h1, h2, h3, h4 {
       color: #004aad;
     }
     .header, .section {
@@ -26,23 +26,11 @@
       font-weight: 500;
     }
     .project {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      align-items: center;
       padding: 20px;
       background: #ffffff;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      margin-bottom: 30px;
-    }
-    .project img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    .project-details h3 {
-      margin-top: 0;
+      margin-bottom: 20px;
     }
     .project-details ul {
       margin-top: 5px;
@@ -54,8 +42,8 @@
       font-weight: 600;
     }
     @media (max-width: 700px) {
-      .project {
-        grid-template-columns: 1fr;
+      body {
+        margin: 20px;
       }
     }
     .about, .values {
@@ -66,7 +54,7 @@
 <body>
 
   <header class="header">
-    <h1>👋 Hi, I'm Anjali Rawal</h1>
+    <h1> Hi, I'm Anjali Rawal</h1>
     <p>Data Analyst • AI Enthusiast • Strategic Problem-Solver</p>
     <div class="header-links">
       <a href="assets/AnjaliRawal_Resume.pdf" target="_blank">📄 Resume</a>
@@ -77,63 +65,90 @@
 
   <section class="section about">
     <h2>About Me</h2>
-    <p>I’m driven by impact—I love seeing how data and AI can directly save time, reduce errors, and deliver millions in savings. I thrive on strategy questions that mix analytics with context: where should we open our next office? What’s the trade-off between cost, labor, and power? I quickly move from hypothesis to answer, and my strength lies in **restorative thinking**—structuring chaos into clarity.</p>
+    <p>I’m driven by impact—I love seeing how data and AI can directly save time, reduce errors, and deliver millions in savings. I thrive on strategy questions that mix analytics with context: where should we open our next office? What’s the trade-off between cost, labor, and power? I quickly move from hypothesis to answer, and my strength lies in <strong>restorative thinking</strong>—structuring chaos into clarity.</p>
   </section>
 
   <section class="section projects">
     <h2>Featured Projects</h2>
 
-    <!-- Unemployment Data Analysis -->
+    <!-- 🐍 PYTHON PROJECTS -->
+    <h3>Python Projects</h3>
+
     <div class="project">
-      <img src="assets/unemployment_visual.png" alt="Unemployment Data Analysis screenshot">
       <div class="project-details">
-        <h3><a href="https://github.com/anjalirawal/Unemployment-Data-Analysis" target="_blank">📉 Unemployment Data Analysis</a></h3>
+        <h4><a href="https://github.com/anjalirawal/Unemployment-Data-Analysis" target="_blank">📉 Unemployment Data Analysis</a></h4>
         <ul>
-          <li>Explored gender & regional unemployment trends in India through rich visual storytelling.</li>
-          <li>Showed pandemic impact using time-series charts and comparative bar plots.</li>
+          <li>Explored gender & regional unemployment trends in India through visual storytelling.</li>
+          <li>Showed pandemic impact using time-series and bar plots.</li>
           <li>Tools: Python, Pandas, Matplotlib</li>
         </ul>
       </div>
     </div>
 
-    <!-- Sales Analysis -->
     <div class="project">
-      <img src="assets/sales_analysis_visual.png" alt="Sales Analysis screenshot">
       <div class="project-details">
-        <h3><a href="https://github.com/anjalirawal/Sales_Analysis" target="_blank">💼 Sales Data Analysis</a></h3>
+        <h4><a href="https://github.com/anjalirawal/Glassdoor-Reviews-Analysis" target="_blank">💬 Glassdoor Reviews NLP</a></h4>
         <ul>
-          <li>Identified top products and revenue drivers across cities and time.</li>
-          <li>Mapped customer behavior trends with clear visual cues.</li>
-          <li>Tools: Python, Seaborn, Pandas</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Glassdoor Reviews Analysis -->
-    <div class="project">
-      <img src="assets/glassdoor_visual.png" alt="Glassdoor Reviews Analysis screenshot">
-      <div class="project-details">
-        <h3><a href="https://github.com/anjalirawal/Glassdoor-Reviews-Analysis" target="_blank">💬 Glassdoor Reviews NLP</a></h3>
-        <ul>
-          <li>Uncovered workplace sentiment using NLP and sentiment plotting.</li>
-          <li>Visualized key themes and keyword clusters in reviews.</li>
+          <li>Uncovered workplace sentiment using NLP and sentiment analysis.</li>
+          <li>Visualized keyword clusters and themes in reviews.</li>
           <li>Tools: Python, NLTK, WordCloud, Seaborn</li>
         </ul>
       </div>
     </div>
 
-    <!-- Speech Emotion Recognition -->
     <div class="project">
-      <img src="assets/speech_emotion_visual.png" alt="Speech Emotion Recognition screenshot">
       <div class="project-details">
-        <h3><a href="https://github.com/anjalirawal/Speech_Emotion_Recognition" target="_blank">🎙️ Speech Emotion Recognition</a></h3>
+        <h4><a href="https://github.com/anjalirawal/Speech_Emotion_Recognition" target="_blank">🎙️ Speech Emotion Recognition</a></h4>
         <ul>
-          <li> classified emotional states from speech using MFCC and deep learning.</li>
-          <li>Demonstrated usability for real-time feedback and affective computing.</li>
+          <li>Classified emotional states from speech using MFCC and deep learning.</li>
+          <li>Explored applications in real-time feedback and affective computing.</li>
           <li>Tools: Python, Librosa, Keras, Scikit-learn</li>
         </ul>
       </div>
     </div>
+
+    <!-- SQL PROJECTS -->
+    <h3>SQL Projects</h3>
+
+    <div class="project">
+      <div class="project-details">
+        <h4><a href="https://github.com/anjalirawal/Prescription-Data-Analytics" target="_blank">💊 Prescription Data Analytics</a></h4>
+        <ul>
+          <li>Analyzed physician-level prescription trends across specialties and states.</li>
+          <li>Used SQL queries for slicing and summarizing prescription patterns.</li>
+          <li>Tools: SQL, Excel</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TABLEAU PROJECTS -->
+    <h3>Tableau Projects</h3>
+
+    <div class="project">
+      <div class="project-details">
+        <h4><a href="https://github.com/anjalirawal/Sales_Analysis" target="_blank">📦 Sales Dashboard & Insights</a></h4>
+        <ul>
+          <li>Built interactive dashboards to visualize sales and revenue trends.</li>
+          <li>Combined Python preprocessing with Tableau visual storytelling.</li>
+          <li>Tools: Tableau, Python, Pandas</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- R PROJECTS -->
+    <h3>R Projects</h3>
+
+    <div class="project">
+      <div class="project-details">
+        <h4><a href="https://github.com/anjalirawal/Alzheimer-s-Dementia-Analysis/tree/main" target="_blank">🧠 Alzheimer’s & Dementia Analysis</a></h4>
+        <ul>
+          <li>Explored cognitive decline patterns across various diagnostic groups.</li>
+          <li>Applied statistical tests and visualized results using R.</li>
+          <li>Tools: R, ggplot2, dplyr</li>
+        </ul>
+      </div>
+    </div>
+
   </section>
 
   <section class="section values">

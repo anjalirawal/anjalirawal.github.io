@@ -60,7 +60,7 @@ Los Angeles | Transforming data into scalable decisions | Open to Strategy, Prod
 
 ---
 
-## [View My Resume](assets/AnjaliRawal_Resume.pdf)
+## [View My Resume](assets/Anjali Rawal.pdf)
 
 ---
 

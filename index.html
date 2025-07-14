@@ -3,51 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anjali Rawal – Data & AI Portfolio</title>
+  <title>Anjali Rawal – Portfolio</title>
   <style>
+    :root {
+      --background: #f4f7fa;
+      --text: #2e2e2e;
+      --accent: #3366cc;
+      --hover: #004aad;
+      --card: #ffffff;
+      --muted: #999999;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 40px auto;
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
       max-width: 900px;
-      background: #f9f9f9;
-      color: #333;
-      padding: 0 20px;
+      margin: auto;
+      padding: 40px 20px;
     }
-    h1, h2, h3, h4 {
-      color: #004aad;
+
+    h1, h2 {
+      color: var(--accent);
     }
+
     .header, .section {
       margin-bottom: 40px;
     }
+
     .header-links a {
       margin-right: 15px;
-      color: #0066cc;
+      color: var(--accent);
       text-decoration: none;
       font-weight: 500;
     }
+
+    .header-links a:hover {
+      color: var(--hover);
+    }
+
     .project {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
       padding: 20px;
-      background: #ffffff;
+      background: var(--card);
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 30px;
     }
+
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-details h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
     .project-details ul {
-      margin-top: 5px;
+      margin-top: 8px;
       padding-left: 20px;
+      font-size: 0.95rem;
     }
+
     .project-details a {
       text-decoration: none;
-      color: #004aad;
+      color: var(--accent);
       font-weight: 600;
     }
+
+    .project-details a:hover {
+      color: var(--hover);
+    }
+
     @media (max-width: 700px) {
-      body {
-        margin: 20px;
+      .project {
+        grid-template-columns: 1fr;
       }
     }
+
     .about, .values {
       line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-top: 60px;
     }
   </style>
 </head>
@@ -57,7 +107,7 @@
     <h1> Hi, I'm Anjali Rawal</h1>
     <p>Data Analyst • AI Enthusiast • Strategic Problem-Solver</p>
     <div class="header-links">
-      <a href="assets/AnjaliRawal_Resume.pdf" target="_blank"> Resume</a>
+      <a href="assets/AnjaliRawal_Resume.pdf" target="_blank">📄 Resume</a>
       <a href="https://www.linkedin.com/in/anjali-rawal-557389188/" target="_blank">LinkedIn</a>
       <a href="https://github.com/anjalirawal" target="_blank">GitHub</a>
     </div>
@@ -70,8 +120,8 @@
 
   <section class="section projects">
     <h2>Featured Projects</h2>
-
-    <!-- 🐍 PYTHON PROJECTS -->
+    
+    <!-- PYTHON PROJECTS -->
     <h3>Python Projects</h3>
 
     <div class="project">
@@ -98,7 +148,7 @@
 
     <div class="project">
       <div class="project-details">
-        <h4><a href="https://github.com/anjalirawal/Speech_Emotion_Recognition" target="_blank">🎙️ Speech Emotion Recognition</a></h4>
+        <h4><a href="https://github.com/anjalirawal/Speech_Emotion_Recognition" target="_blank"> Speech Emotion Recognition</a></h4>
         <ul>
           <li>Classified emotional states from speech using MFCC and deep learning.</li>
           <li>Explored applications in real-time feedback and affective computing.</li>

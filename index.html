@@ -7,11 +7,11 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 40px;
+      margin: 40px auto;
+      max-width: 900px;
       background: #f9f9f9;
       color: #333;
-      max-width: 900px;
-      margin: auto;
+      padding: 0 20px;
     }
     h1, h2 {
       color: #004aad;
@@ -21,79 +21,116 @@
       padding: 20px;
       background: #ffffff;
       border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
-    a {
-      color: #0066cc;
+    .project h3 {
+      margin: 0 0 5px;
+    }
+    .project ul {
+      margin: 5px 0 0;
+      padding-left: 20px;
+    }
+    .project a {
       text-decoration: none;
+      color: #004aad;
+      font-weight: 600;
+    }
+    .header-links {
+      margin: 20px 0;
+    }
+    .header-links a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #0066cc;
       font-weight: 500;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .links {
-      margin: 10px 0 30px;
     }
   </style>
 </head>
 <body>
 
   <h1>👋 Hi, I'm Anjali Rawal</h1>
-  <p>Data Analyst | AI Researcher | Strategy-Driven Professional  
-  <br>Focused on turning complex data into actionable business insights.</p>
+  <p>Data Analyst | AI Researcher | Strategy-Driven Professional</p>
 
-  <div class="links">
-    <a href="assets/Anjali_Rawal.pdf" target="_blank">📄 Download Resume</a> |
-    <a href="https://www.linkedin.com/in/anjali-rawal-557389188/" target="_blank">LinkedIn</a> |
+  <div class="header-links">
+    <a href="assets/AnjaliRawal_Resume.pdf" target="_blank">📄 Resume</a>
+    <a href="https://www.linkedin.com/in/anjali-rawal-557389188/" target="_blank">LinkedIn</a>
     <a href="https://github.com/anjalirawal" target="_blank">GitHub</a>
   </div>
 
-  <h2>🚀 GitHub Projects</h2>
+  <h2>🧠 Featured Projects</h2>
 
   <div class="project">
-    <h3>📉 Unemployment Data Analysis</h3>
-    <p>Analyzed regional and gender-based unemployment trends in India using Python, Pandas, and Matplotlib. Focused on time-series and policy implications during the COVID-19 period.</p>
-    <a href="https://github.com/anjalirawal/Unemployment-Data-Analysis" target="_blank">🔗 View on GitHub</a>
+    <h3><a href="https://github.com/anjalirawal/Unemployment-Data-Analysis" target="_blank">📉 Unemployment Data Analysis</a></h3>
+    <ul>
+      <li>Analyzed Indian unemployment trends across regions and genders using time-series techniques.</li>
+      <li>Built visualizations to identify pandemic impact using Pandas and Matplotlib.</li>
+      <li>Tools: Python, Pandas, Matplotlib</li>
+    </ul>
   </div>
 
   <div class="project">
-    <h3>💼 Sales Analysis</h3>
-    <p>Performed EDA on sales data to identify top-selling products, city-wise performance, and trends over time. Delivered actionable insights using Pandas and Seaborn.</p>
-    <a href="https://github.com/anjalirawal/Sales_Analysis" target="_blank">🔗 View on GitHub</a>
+    <h3><a href="https://github.com/anjalirawal/Sales_Analysis" target="_blank">📊 Sales Data Analysis</a></h3>
+    <ul>
+      <li>Explored large-scale sales data to find top-selling products and city-wise performance.</li>
+      <li>Delivered insights into revenue growth and customer trends.</li>
+      <li>Tools: Python, Seaborn, Pandas</li>
+    </ul>
   </div>
 
   <div class="project">
-    <h3>💬 Glassdoor Reviews Analysis</h3>
-    <p>Analyzed Glassdoor employee reviews using NLP and sentiment analysis to understand employee satisfaction and key themes in company culture.</p>
-    <a href="https://github.com/anjalirawal/Glassdoor-Reviews-Analysis" target="_blank">🔗 View on GitHub</a>
+    <h3><a href="https://github.com/anjalirawal/Glassdoor-Reviews-Analysis" target="_blank">💬 Glassdoor Reviews NLP</a></h3>
+    <ul>
+      <li>Performed sentiment analysis on employee reviews to detect workplace satisfaction trends.</li>
+      <li>Visualized keyword clusters using NLP techniques and text analytics.</li>
+      <li>Tools: Python, NLTK, WordCloud, Seaborn</li>
+    </ul>
   </div>
 
   <div class="project">
-    <h3>🎙️ Speech Emotion Recognition</h3>
-    <p>Built a model using MFCCs and deep learning to classify emotional states in audio speech. Applications in real-time sentiment feedback and mental health.</p>
-    <a href="https://github.com/anjalirawal/Speech_Emotion_Recognition" target="_blank">🔗 View on GitHub</a>
+    <h3><a href="https://github.com/anjalirawal/Speech_Emotion_Recognition" target="_blank">🎙️ Speech Emotion Recognition</a></h3>
+    <ul>
+      <li>Trained a model to classify emotions in speech audio using MFCC and deep learning.</li>
+      <li>Applications in real-time feedback systems and affective computing.</li>
+      <li>Tools: Python, Librosa, Scikit-learn, Keras</li>
+    </ul>
   </div>
 
-  <h2>📂 Professional Projects (Code Confidential)</h2>
+  <h2>🏢 Industry Projects (Confidential Code)</h2>
 
   <div class="project">
     <h3>🤖 AI-Powered Tech Support – Niagara Bottling</h3>
-    <p>Built an AI-based support and anomaly detection solution using Azure ML, saving ~$2.3M/year. Developed data pipelines, wrote business requirement documents, and supported cross-functional tech adoption.</p>
+    <ul>
+      <li>Created an AI tool using Azure ML to reduce downtime and vendor dependency.</li>
+      <li>Authored BRDs, built predictive pipelines, and supported ~$2.3M in cost savings.</li>
+      <li>Tools: Azure ML, Python, SQL</li>
+    </ul>
   </div>
 
   <div class="project">
     <h3>🧠 NLP Deduplication System – Kinnect</h3>
-    <p>Integrated semantic-embedding deduplication to improve question generation in MVP product. Led optimization and scalability efforts across the AI pipeline.</p>
+    <ul>
+      <li>Improved generated question quality using semantic embedding-based deduplication.</li>
+      <li>Optimized performance and scaled MVP product features.</li>
+      <li>Tools: Sentence Transformers, Python</li>
+    </ul>
   </div>
 
   <div class="project">
-    <h3>🔎 ML Content Verifier – Northeastern University</h3>
-    <p>Created a content classification tool to distinguish human vs. machine-generated text using NLP and AWS SageMaker. Achieved ~90% accuracy and contributed to generative AI research.</p>
+    <h3>🔍 ML Content Verifier – Northeastern Research</h3>
+    <ul>
+      <li>Developed a classifier to detect human vs. machine-generated content with ~90% accuracy.</li>
+      <li>Used SageMaker and NLP for generative AI trustworthiness analysis.</li>
+      <li>Tools: AWS SageMaker, BERT, Python, SQL</li>
+    </ul>
   </div>
 
   <div class="project">
     <h3>📊 Investment Risk Dashboard – Supply Wisdom</h3>
-    <p>Built real-time risk dashboards using Tableau and Python to monitor financial and sentiment risk for investment clients. Enabled faster, insight-driven decision making.</p>
+    <ul>
+      <li>Built real-time Tableau dashboards to monitor investment risks using sentiment and financial data.</li>
+      <li>Automated risk signals for investor decision-making.</li>
+      <li>Tools: Tableau, Python, Financial APIs</li>
+    </ul>
   </div>
 
 </body>

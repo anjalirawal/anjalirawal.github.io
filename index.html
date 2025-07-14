@@ -50,7 +50,7 @@
       color: var(--hover);
     }
 
-    .project {
+    .project, .experience {
       background: var(--card);
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -58,12 +58,14 @@
       margin-bottom: 25px;
     }
 
-    .project-details h4 {
+    .project-details h4,
+    .experience h4 {
       margin: 0 0 10px 0;
       font-size: 1.05rem;
     }
 
-    .project-details ul {
+    .project-details ul,
+    .experience ul {
       margin: 0;
       padding-left: 20px;
       font-size: 0.95rem;
@@ -106,13 +108,12 @@
 
   <section class="section about">
     <h2>About Me</h2>
-    <p>I’m driven by impact, I love seeing how data and AI can directly save time, reduce errors, and deliver millions in savings. I thrive on strategy questions that mix analytics with context: where should we open our next office? What’s the trade-off between cost, labor, and power? I quickly move from hypothesis to answer, and my strength lies in <strong>restorative thinking</strong>—structuring chaos into clarity.</p>
+    <p>I’m driven by impact—I love seeing how data and AI can directly save time, reduce errors, and deliver millions in savings. I thrive on strategy questions that mix analytics with context: where should we open our next office? What’s the trade-off between cost, labor, and power? I quickly move from hypothesis to answer, and my strength lies in <strong>restorative thinking</strong>—structuring chaos into clarity.</p>
   </section>
 
   <section class="section projects">
     <h2>Featured Projects</h2>
 
-    <!-- PYTHON PROJECTS -->
     <h3>Python Projects</h3>
 
     <div class="project">
@@ -148,9 +149,7 @@
       </div>
     </div>
 
-    <!-- SQL PROJECTS -->
     <h3>SQL Projects</h3>
-
     <div class="project">
       <div class="project-details">
         <h4><a href="https://github.com/anjalirawal/Prescription-Data-Analytics" target="_blank">Prescription Data Analytics</a></h4>
@@ -162,9 +161,7 @@
       </div>
     </div>
 
-    <!-- TABLEAU PROJECTS -->
     <h3>Tableau Projects</h3>
-
     <div class="project">
       <div class="project-details">
         <h4><a href="https://github.com/anjalirawal/Sales_Analysis" target="_blank">Sales Dashboard & Insights</a></h4>
@@ -176,14 +173,12 @@
       </div>
     </div>
 
-    <!-- R PROJECTS -->
     <h3>R Projects</h3>
-
     <div class="project">
       <div class="project-details">
-        <h4><a href="https://github.com/anjalirawal/Alzheimer-s-Dementia-Analysis/tree/main" target="_blank">Alzheimer’s & Dementia Analysis</a></h4>
+        <h4><a href="https://github.com/anjalirawal/Alzheimer-s-Dementia-Analysis" target="_blank">Alzheimer’s & Dementia Analysis</a></h4>
         <ul>
-          <li>Explored cognitive decline patterns across various diagnostic groups.</li>
+          <li>Explored cognitive decline patterns across diagnostic groups.</li>
           <li>Applied statistical tests and visualized results using R.</li>
           <li>Tools: R, ggplot2, dplyr</li>
         </ul>
@@ -191,9 +186,54 @@
     </div>
   </section>
 
+  <section class="section experience">
+    <h2>Professional Experience (Code Confidential)</h2>
+
+    <div class="experience">
+      <h4>AI Developer & Analyst – Kinnect (Remote, US) <span style="float:right;">Jun 2025 – Present</span></h4>
+      <ul>
+        <li>Enhanced MVP of Kinnect Echo by integrating AI-driven semantic deduplication.</li>
+        <li>Led debugging, performance tuning, and implemented backend admin tools with A/B testing.</li>
+        <li>Contributed to scalable deployment of AI features in production.</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <h4>Research Assistant – Northeastern University (Seattle, WA) <span style="float:right;">Nov 2023 – Mar 2025</span></h4>
+      <ul>
+        <li>Built a 90% accuracy classifier to detect machine-generated content using AWS SageMaker.</li>
+        <li>Performed SQL-based data prep and collaborated on academic delivery and adoption.</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <h4>Asset Management Intern – Niagara Bottling (Diamond Bar, CA) <span style="float:right;">Jul 2024 – Dec 2024</span></h4>
+      <ul>
+        <li>Built AI-powered tech support tool using Azure ML, reducing vendor dependency.</li>
+        <li>Drafted BRDs and designed ETL pipelines to enable model training and deployment.</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <h4>Senior Research Analyst – Supply Wisdom (Bengaluru, India) <span style="float:right;">Jan 2020 – Mar 2022</span></h4>
+      <ul>
+        <li>Delivered investment risk dashboards and automated analysis using Python and Tableau.</li>
+        <li>Reduced process time by 80% and enhanced stakeholder insights with real-time alerts.</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <h4>Associate Analyst – GD Research Center (Hyderabad, India) <span style="float:right;">Jan 2019 – Jan 2020</span></h4>
+      <ul>
+        <li>Used R and Power BI for market analysis in the medical device sector.</li>
+        <li>Supported analytical solution design with high-quality preprocessing and documentation.</li>
+      </ul>
+    </div>
+  </section>
+
   <section class="section values">
     <h2>Volunteering & Values</h2>
-    <p>Volunteering at Fred Hutch taught me the power of small moments: a smile, a kind word, and the empathy behind them. It reminds me that data work isn’t just numbers, it’s about people. I bring structure, curiosity, and that same heart to every analytics problem I solve.</p>
+    <p>Volunteering at Fred Hutch taught me the power of small moments: a smile, a kind word, and the empathy behind them. It reminds me that data work isn’t just numbers—it’s about people. I bring structure, curiosity, and that same heart to every analytics problem I solve.</p>
   </section>
 
   <footer class="section">

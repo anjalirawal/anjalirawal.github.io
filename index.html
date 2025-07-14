@@ -6,7 +6,7 @@
   <title>Anjali Rawal – Portfolio</title>
   <style>
     :root {
-      --background: #f4f7fa;
+      --background: #eef1f6;
       --text: #2e2e2e;
       --accent: #3366cc;
       --hover: #004aad;
@@ -44,30 +44,21 @@
     }
 
     .project {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      align-items: center;
-      padding: 20px;
       background: var(--card);
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 20px;
       margin-bottom: 30px;
     }
 
-    .project img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-    }
-
-    .project-details h3 {
-      margin: 0;
+    .project-details h4 {
+      margin: 0 0 10px 0;
       font-size: 1.1rem;
+      color: var(--accent);
     }
 
     .project-details ul {
-      margin-top: 8px;
+      margin: 0;
       padding-left: 20px;
       font-size: 0.95rem;
     }
@@ -82,15 +73,16 @@
       color: var(--hover);
     }
 
-    @media (max-width: 700px) {
-      .project {
-        grid-template-columns: 1fr;
-      }
-    }
-
     .about, .values {
       line-height: 1.6;
       font-size: 1rem;
+    }
+
+    h3 {
+      margin-top: 40px;
+      font-size: 1.2rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
     }
 
     footer {
@@ -104,10 +96,10 @@
 <body>
 
   <header class="header">
-    <h1> Hi, I'm Anjali Rawal</h1>
+    <h1>Hi, I'm Anjali Rawal</h1>
     <p>Data Analyst • AI Enthusiast • Strategic Problem-Solver</p>
     <div class="header-links">
-      <a href="assets/AnjaliRawal_Resume.pdf" target="_blank">📄 Resume</a>
+      <a href="assets/AnjaliRawal_Resume.pdf" target="_blank">Resume</a>
       <a href="https://www.linkedin.com/in/anjali-rawal-557389188/" target="_blank">LinkedIn</a>
       <a href="https://github.com/anjalirawal" target="_blank">GitHub</a>
     </div>
@@ -120,13 +112,13 @@
 
   <section class="section projects">
     <h2>Featured Projects</h2>
-    
+
     <!-- PYTHON PROJECTS -->
     <h3>Python Projects</h3>
 
     <div class="project">
       <div class="project-details">
-        <h4><a href="https://github.com/anjalirawal/Unemployment-Data-Analysis" target="_blank"> Unemployment Data Analysis</a></h4>
+        <h4><a href="https://github.com/anjalirawal/Unemployment-Data-Analysis" target="_blank">Unemployment Data Analysis</a></h4>
         <ul>
           <li>Explored gender & regional unemployment trends in India through visual storytelling.</li>
           <li>Showed pandemic impact using time-series and bar plots.</li>
@@ -148,7 +140,7 @@
 
     <div class="project">
       <div class="project-details">
-        <h4><a href="https://github.com/anjalirawal/Speech_Emotion_Recognition" target="_blank"> Speech Emotion Recognition</a></h4>
+        <h4><a href="https://github.com/anjalirawal/Speech_Emotion_Recognition" target="_blank">Speech Emotion Recognition</a></h4>
         <ul>
           <li>Classified emotional states from speech using MFCC and deep learning.</li>
           <li>Explored applications in real-time feedback and affective computing.</li>
@@ -162,7 +154,7 @@
 
     <div class="project">
       <div class="project-details">
-        <h4><a href="https://github.com/anjalirawal/Prescription-Data-Analytics" target="_blank"> Prescription Data Analytics</a></h4>
+        <h4><a href="https://github.com/anjalirawal/Prescription-Data-Analytics" target="_blank">Prescription Data Analytics</a></h4>
         <ul>
           <li>Analyzed physician-level prescription trends across specialties and states.</li>
           <li>Used SQL queries for slicing and summarizing prescription patterns.</li>
@@ -176,7 +168,7 @@
 
     <div class="project">
       <div class="project-details">
-        <h4><a href="https://github.com/anjalirawal/Sales_Analysis" target="_blank"> Sales Dashboard & Insights</a></h4>
+        <h4><a href="https://github.com/anjalirawal/Sales_Analysis" target="_blank">Sales Dashboard & Insights</a></h4>
         <ul>
           <li>Built interactive dashboards to visualize sales and revenue trends.</li>
           <li>Combined Python preprocessing with Tableau visual storytelling.</li>
@@ -190,7 +182,7 @@
 
     <div class="project">
       <div class="project-details">
-        <h4><a href="https://github.com/anjalirawal/Alzheimer-s-Dementia-Analysis/tree/main" target="_blank"> Alzheimer’s & Dementia Analysis</a></h4>
+        <h4><a href="https://github.com/anjalirawal/Alzheimer-s-Dementia-Analysis/tree/main" target="_blank">Alzheimer’s & Dementia Analysis</a></h4>
         <ul>
           <li>Explored cognitive decline patterns across various diagnostic groups.</li>
           <li>Applied statistical tests and visualized results using R.</li>
@@ -207,7 +199,7 @@
   </section>
 
   <footer class="section">
-    <p style="text-align:center;color:#777;">Built by me with ❤ • Strategic • Empathetic • Data-Driven • AI-Powered</p>
+    <p>Built by me with care • Strategic • Empathetic • Data-Driven • AI-Powered</p>
   </footer>
 
 </body>

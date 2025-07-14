@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anjali Rawal – Portfolio</title>
+  <title>Anjali Rawal – Data & AI Portfolio</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -16,122 +16,134 @@
     h1, h2 {
       color: #004aad;
     }
+    .header, .section {
+      margin-bottom: 40px;
+    }
+    .header-links a {
+      margin-right: 15px;
+      color: #0066cc;
+      text-decoration: none;
+      font-weight: 500;
+    }
     .project {
-      margin-bottom: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
       padding: 20px;
       background: #ffffff;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
     }
-    .project h3 {
-      margin: 0 0 5px;
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .project ul {
-      margin: 5px 0 0;
+    .project-details h3 {
+      margin-top: 0;
+    }
+    .project-details ul {
+      margin-top: 5px;
       padding-left: 20px;
     }
-    .project a {
+    .project-details a {
       text-decoration: none;
       color: #004aad;
       font-weight: 600;
     }
-    .header-links {
-      margin: 20px 0;
+    @media (max-width: 700px) {
+      .project {
+        grid-template-columns: 1fr;
+      }
     }
-    .header-links a {
-      margin-right: 15px;
-      text-decoration: none;
-      color: #0066cc;
-      font-weight: 500;
+    .about, .values {
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
-  <h1>👋 Hi, I'm Anjali Rawal</h1>
-  <p>Data Analyst | AI Researcher | Strategy-Driven Professional</p>
+  <header class="header">
+    <h1>👋 Hi, I'm Anjali Rawal</h1>
+    <p>Data Analyst • AI Enthusiast • Strategic Problem-Solver</p>
+    <div class="header-links">
+      <a href="assets/AnjaliRawal_Resume.pdf" target="_blank">📄 Resume</a>
+      <a href="https://www.linkedin.com/in/anjali-rawal-557389188/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/anjalirawal" target="_blank">GitHub</a>
+    </div>
+  </header>
 
-  <div class="header-links">
-    <a href="assets/AnjaliRawal_Resume.pdf" target="_blank">📄 Resume</a>
-    <a href="https://www.linkedin.com/in/anjali-rawal-557389188/" target="_blank">LinkedIn</a>
-    <a href="https://github.com/anjalirawal" target="_blank">GitHub</a>
-  </div>
+  <section class="section about">
+    <h2>About Me</h2>
+    <p>I’m driven by impact—I love seeing how data and AI can directly save time, reduce errors, and deliver millions in savings. I thrive on strategy questions that mix analytics with context: where should we open our next office? What’s the trade-off between cost, labor, and power? I quickly move from hypothesis to answer, and my strength lies in **restorative thinking**—structuring chaos into clarity.</p>
+  </section>
 
-  <h2>🧠 Featured Projects</h2>
+  <section class="section projects">
+    <h2>Featured Projects</h2>
 
-  <div class="project">
-    <h3><a href="https://github.com/anjalirawal/Unemployment-Data-Analysis" target="_blank">📉 Unemployment Data Analysis</a></h3>
-    <ul>
-      <li>Analyzed Indian unemployment trends across regions and genders using time-series techniques.</li>
-      <li>Built visualizations to identify pandemic impact using Pandas and Matplotlib.</li>
-      <li>Tools: Python, Pandas, Matplotlib</li>
-    </ul>
-  </div>
+    <!-- Unemployment Data Analysis -->
+    <div class="project">
+      <img src="assets/unemployment_visual.png" alt="Unemployment Data Analysis screenshot">
+      <div class="project-details">
+        <h3><a href="https://github.com/anjalirawal/Unemployment-Data-Analysis" target="_blank">📉 Unemployment Data Analysis</a></h3>
+        <ul>
+          <li>Explored gender & regional unemployment trends in India through rich visual storytelling.</li>
+          <li>Showed pandemic impact using time-series charts and comparative bar plots.</li>
+          <li>Tools: Python, Pandas, Matplotlib</li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3><a href="https://github.com/anjalirawal/Sales_Analysis" target="_blank">📊 Sales Data Analysis</a></h3>
-    <ul>
-      <li>Explored large-scale sales data to find top-selling products and city-wise performance.</li>
-      <li>Delivered insights into revenue growth and customer trends.</li>
-      <li>Tools: Python, Seaborn, Pandas</li>
-    </ul>
-  </div>
+    <!-- Sales Analysis -->
+    <div class="project">
+      <img src="assets/sales_analysis_visual.png" alt="Sales Analysis screenshot">
+      <div class="project-details">
+        <h3><a href="https://github.com/anjalirawal/Sales_Analysis" target="_blank">💼 Sales Data Analysis</a></h3>
+        <ul>
+          <li>Identified top products and revenue drivers across cities and time.</li>
+          <li>Mapped customer behavior trends with clear visual cues.</li>
+          <li>Tools: Python, Seaborn, Pandas</li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3><a href="https://github.com/anjalirawal/Glassdoor-Reviews-Analysis" target="_blank">💬 Glassdoor Reviews NLP</a></h3>
-    <ul>
-      <li>Performed sentiment analysis on employee reviews to detect workplace satisfaction trends.</li>
-      <li>Visualized keyword clusters using NLP techniques and text analytics.</li>
-      <li>Tools: Python, NLTK, WordCloud, Seaborn</li>
-    </ul>
-  </div>
+    <!-- Glassdoor Reviews Analysis -->
+    <div class="project">
+      <img src="assets/glassdoor_visual.png" alt="Glassdoor Reviews Analysis screenshot">
+      <div class="project-details">
+        <h3><a href="https://github.com/anjalirawal/Glassdoor-Reviews-Analysis" target="_blank">💬 Glassdoor Reviews NLP</a></h3>
+        <ul>
+          <li>Uncovered workplace sentiment using NLP and sentiment plotting.</li>
+          <li>Visualized key themes and keyword clusters in reviews.</li>
+          <li>Tools: Python, NLTK, WordCloud, Seaborn</li>
+        </ul>
+      </div>
+    </div>
 
-  <div class="project">
-    <h3><a href="https://github.com/anjalirawal/Speech_Emotion_Recognition" target="_blank">🎙️ Speech Emotion Recognition</a></h3>
-    <ul>
-      <li>Trained a model to classify emotions in speech audio using MFCC and deep learning.</li>
-      <li>Applications in real-time feedback systems and affective computing.</li>
-      <li>Tools: Python, Librosa, Scikit-learn, Keras</li>
-    </ul>
-  </div>
+    <!-- Speech Emotion Recognition -->
+    <div class="project">
+      <img src="assets/speech_emotion_visual.png" alt="Speech Emotion Recognition screenshot">
+      <div class="project-details">
+        <h3><a href="https://github.com/anjalirawal/Speech_Emotion_Recognition" target="_blank">🎙️ Speech Emotion Recognition</a></h3>
+        <ul>
+          <li> classified emotional states from speech using MFCC and deep learning.</li>
+          <li>Demonstrated usability for real-time feedback and affective computing.</li>
+          <li>Tools: Python, Librosa, Keras, Scikit-learn</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <h2>🏢 Industry Projects (Confidential Code)</h2>
+  <section class="section values">
+    <h2>Volunteering & Values</h2>
+    <p>Volunteering at Fred Hutch taught me the power of small moments: a smile, a kind word, and the empathy behind them. It reminds me that data work isn’t just numbers—it’s about people. I bring structure, curiosity, and that same heart to every analytics problem I solve.</p>
+  </section>
 
-  <div class="project">
-    <h3>🤖 AI-Powered Tech Support – Niagara Bottling</h3>
-    <ul>
-      <li>Created an AI tool using Azure ML to reduce downtime and vendor dependency.</li>
-      <li>Authored BRDs, built predictive pipelines, and supported ~$2.3M in cost savings.</li>
-      <li>Tools: Azure ML, Python, SQL</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <h3>🧠 NLP Deduplication System – Kinnect</h3>
-    <ul>
-      <li>Improved generated question quality using semantic embedding-based deduplication.</li>
-      <li>Optimized performance and scaled MVP product features.</li>
-      <li>Tools: Sentence Transformers, Python</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <h3>🔍 ML Content Verifier – Northeastern Research</h3>
-    <ul>
-      <li>Developed a classifier to detect human vs. machine-generated content with ~90% accuracy.</li>
-      <li>Used SageMaker and NLP for generative AI trustworthiness analysis.</li>
-      <li>Tools: AWS SageMaker, BERT, Python, SQL</li>
-    </ul>
-  </div>
-
-  <div class="project">
-    <h3>📊 Investment Risk Dashboard – Supply Wisdom</h3>
-    <ul>
-      <li>Built real-time Tableau dashboards to monitor investment risks using sentiment and financial data.</li>
-      <li>Automated risk signals for investor decision-making.</li>
-      <li>Tools: Tableau, Python, Financial APIs</li>
-    </ul>
-  </div>
+  <footer class="section">
+    <p style="text-align:center;color:#777;">Built by me with ❤️ • Strategic • Empathetic • Data-Driven • AI-Powered</p>
+  </footer>
 
 </body>
 </html>
